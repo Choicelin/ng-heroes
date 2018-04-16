@@ -4,4 +4,12 @@
 
 li {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  .delete {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #f66b5d;
+  }
 }
+
