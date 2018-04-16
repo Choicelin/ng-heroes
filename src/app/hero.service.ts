@@ -13,7 +13,12 @@ export class HeroService {
   }
 
   getHeroes(): Observable<Hero[]> {
-    this.messageService.add('heroes come!');
+    this.messageService.add('英雄来了!');
     return of(HEROES);
+  }
+
+  getHero(id): Observable<Hero> {
+    this.messageService.add(`选择英雄${id}`);
+    return of(HEROES.find((hero) => id === hero.id))
   }
 }

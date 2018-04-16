@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blue-link {
+  color: lightskyblue;
+  text-decoration: none;
+  font: bold 14px/1.2;
+  margin: 0 20px;
+}
