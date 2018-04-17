@@ -14,6 +14,8 @@ import {AppRoutingModule} from './/app-routing.module';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {InMemoryDataService} from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { Page404Component } from './page404/page404.component';
+import { ChildrenTestComponent } from './children-test/children-test.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    Page404Component,
+    ChildrenTestComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 <h1>{{title}}</h1>
 <nav>
-  <a class="link" routerLink="dashboard">榜单</a>
+  <a class="link" routerLink="dashboard" [queryParams]="{test: 1}">榜单</a>
   <a class="link" routerLink="heroes">英雄</a>
 </nav>
 <app-messages></app-messages>
