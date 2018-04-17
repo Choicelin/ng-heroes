@@ -2,6 +2,9 @@
 <nav>
   <a class="link" routerLink="dashboard" [queryParams]="{test: 1}">榜单</a>
   <a class="link" routerLink="heroes">英雄</a>
+  <a class="link" [routerLink]="[{outlets: {primary: 'dashboard','feedback': 'feed'}}]">开始提问</a>
+  <a class="link" [routerLink]="[{outlets: {primary: 'dashboard','feedback': null}}]">结束提问</a>
 </nav>
 <app-messages></app-messages>
 <router-outlet></router-outlet>
+<router-outlet name="feedback"></router-outlet>

@@ -16,6 +16,7 @@ import {InMemoryDataService} from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { Page404Component } from './page404/page404.component';
 import { ChildrenTestComponent } from './children-test/children-test.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ChildrenTestComponent } from './children-test/children-test.component';
     DashboardComponent,
     HeroSearchComponent,
     Page404Component,
-    ChildrenTestComponent
+    ChildrenTestComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
