@@ -17,6 +17,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { Page404Component } from './page404/page404.component';
 import { ChildrenTestComponent } from './children-test/children-test.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import {Permission} from './guard/permission';
+import {LeavePermission} from './guard/leavePermission';
+import {ResolvePermission} from './guard/resolvePermission';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [HeroService, MessageService],
+  providers: [HeroService, MessageService, Permission, LeavePermission,ResolvePermission],
   bootstrap: [AppComponent]
 })
 export class AppModule {

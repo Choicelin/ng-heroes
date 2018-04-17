@@ -13,6 +13,7 @@ import {HeroService} from '../hero.service';
 export class HeroDetailComponent implements OnInit {
 
   @Input() hero: Hero;
+  focus: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -35,6 +36,10 @@ export class HeroDetailComponent implements OnInit {
       .subscribe(() => {
         this.goBack();
       });
+  }
+
+  isFocus() {
+    return this.focus;
   }
 
   ngOnInit(): void {
