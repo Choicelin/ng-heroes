@@ -42,7 +42,7 @@ import {ResolvePermission} from './guard/resolvePermission';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [HeroService, MessageService, Permission, LeavePermission,ResolvePermission],
+  providers: [HeroService, MessageService, Permission, LeavePermission],
   bootstrap: [AppComponent]
 })
 export class AppModule {

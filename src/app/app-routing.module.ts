@@ -9,7 +9,6 @@ import {ChildrenTestComponent} from './children-test/children-test.component';
 import {FeedbackComponent} from './feedback/feedback.component';
 import {Permission} from './guard/permission';
 import {LeavePermission} from './guard/leavePermission';
-import {ResolvePermission} from './guard/resolvePermission';
 
 const routes: Routes = [
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
@@ -22,10 +21,7 @@ const routes: Routes = [
       {path: 'hidehero', component: ChildrenTestComponent}
     ],
     canActivate: [Permission],
-    canDeactivate: [LeavePermission],
-    resolve: {
-      detail: ResolvePermission
-    }
+    canDeactivate: [LeavePermission]
   },
   {path: '**', component: Page404Component}
 ];
