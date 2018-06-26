@@ -19,7 +19,6 @@ import { ChildrenTestComponent } from './children-test/children-test.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import {Permission} from './guard/permission';
 import {LeavePermission} from './guard/leavePermission';
-import {ResolvePermission} from './guard/resolvePermission';
 
 @NgModule({
   declarations: [
